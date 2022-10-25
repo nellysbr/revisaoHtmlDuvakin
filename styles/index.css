@@ -1,0 +1,130 @@
+.mainContainer {
+  width: 100vw; /* vw - viewer width port (pega 100% da largura do tamanho da TELA do usuario */
+  height: 100vh; /* vh - viewer height port (pega 100% da altura do tamanho da TELA do usuario */
+  border: 20px solid black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.containerEsquerda {
+  width: 50vw;
+  display: flex; /* estudar flexbox */
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerEsquerda .header p {
+  margin-top: 0.35rem;
+}
+
+.dateBithInfo {
+  margin-left: 1rem;
+}
+
+.containerEsquerda .header p svg {
+  margin: 0;
+}
+
+.iconEmail,
+.iconPhone,
+.iconLocation,
+.iconCalendar,
+.iconFlag,
+.iconLinkedin {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.containerEsquerda .profile,
+.containerEsquerda .languages,
+.containerEsquerda .education {
+  width: 100%;
+}
+
+.containerEsquerda .profile,
+.containerEsquerda .education,
+.containerEsquerda .languages {
+  margin-top: 1.5rem;
+}
+
+.containerEsquerda .profile p,
+.containerEsquerda .education h4,
+.containerEsquerda .languages ul {
+  margin-top: 1rem;
+}
+
+.containerEsquerda .languages ul {
+  list-style: none; /* essa propriedade tira o estilo de listas do html*/
+}
+
+.containerEsquerda .profile > h3,
+.containerEsquerda .education > h3,
+.containerEsquerda .languages > h3 {
+  /*todo h1 dentro da div Containeresquerda */
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+.containerEsquerda .languages ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circleContainer {
+  display: flex;
+  justify-content: right;
+}
+
+.containerEsquerda .languages ul li .circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 0.2rem;
+}
+
+.circleCompleted {
+  background-color: black;
+}
+
+/* inicio do css para o lado direito da pagina */
+
+.ContainerDireita {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContainerDireita > h3 {
+  /*todo h1 dentro da div ContainerDireita */
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: calc(100% - 2rem);
+  text-align: center;
+}
+
+.fotoPerfil {
+  width: 11.25rem;
+  border-radius: 50%; /*A propriedade, faz o arredondamento de margens*/
+  height: 11.25rem;
+}
